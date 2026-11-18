@@ -1,0 +1,41 @@
+{
+  "ServiceRequest11": [
+    {
+      "Request_ID": 113,
+      "Title": "Laptop hanging",
+      "Description": "",
+      "Employee_Name": "Lina",
+      "Department1": "IT",
+      "Priority": "High",
+      "Status1": "Open",
+      "Assigned_To": "Hardware team",
+      "Hour": 3,
+      "id": "6L9KiVrpyGg"
+    },
+    {
+      "Request_ID": 114,
+      "Title": "Software issue",
+      "Description": "",
+      "Employee_Name": "Mohit",
+      "Department1": "Sales",
+      "Priority": "Critical",
+      "Status1": "Closed",
+      "Assigned_To": "sales team",
+      "Hour": 4,
+      "id": "ayYQDDU4z6A"
+    },
+    {
+      "Request_ID": 111,
+      "Title": "Technical issue",
+      "Description": "",
+      "Employee_Name": "Gayatri",
+      "Department1": "IT",
+      "Priority": "Low",
+      "Status1": "Resolved",
+      "Assigned_To": "IT Technical team",
+      "Hour": 2,
+      "id": "1CDJ5Q4EErI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

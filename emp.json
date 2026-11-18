@@ -1,0 +1,35 @@
+{
+  "employees": [
+    {
+      "employeeID": 111,
+      "empName": "Gayatri",
+      "Email": "Gayatri@123",
+      "Department": "IT",
+      "Salary": 50000,
+      "Experience": "fresher",
+      "EmployeeType": "Developer",
+      "id": "MA2S98xj5Xw"
+    },
+    {
+      "employeeID": 112,
+      "empName": "Vishakha",
+      "Email": "Vishu@123",
+      "Department": "HR",
+      "Salary": 70000,
+      "Experience": "2years",
+      "EmployeeType": "Developer",
+      "id": "3GXYZToQ8wc"
+    },
+    {
+      "employeeID": 113,
+      "empName": "Lina",
+      "Email": "Lina@123",
+      "Department": "Finance",
+      "Salary": 60000,
+      "Experience": "2years",
+      "EmployeeType": "Manager",
+      "id": "IAR2wZPFpYA"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

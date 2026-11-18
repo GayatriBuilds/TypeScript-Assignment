@@ -1,0 +1,99 @@
+ .Dashboard-container {
+    display: flex;
+    gap: 20px;
+}
+ .totalreaquest{
+    border: 2px solid black;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+}
+.criticalrequest{
+    border: 2px solid black;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+
+}
+.resolved{
+    border: 2px solid black;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+}
+.inprogress{
+    border: 2px solid black;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+}
+.openrequest{
+    border: 2px solid black;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+}
+.Dashboard-box{
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+    background: white;
+    width: 400px;
+    padding: 25px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+.popup-content input,
+.popup-content select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 15px;
+}
+
+#closeUpdatePopup {
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background: white;
+    width: 400px;
+    margin: 100px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.popup-content button {
+    margin: 5px;
+    padding: 8px 15px;
+}

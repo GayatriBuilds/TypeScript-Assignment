@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Emplyee Search</h1>
+    <label for="EmployeeId">ID</label>
+    <input type="text" name="EmployeeId" id="EmployeeId" placeholder="enter Id"><br><br>
+    <label for="EmployeeName">Name</label>
+    <input type="text" name="EmployeeName" id="EmployeeName" placeholder="enter Name"><br><br>
+    <label for="Department">Department</label>
+    <input type="text" name="Department" id="Department" placeholder="enter Department"><br><br>
+    <label for="EmployeeEmail">Email</label>
+    <input type="text" name="EmployeeEmail" id="EmployeeEmail" placeholder="enter Email"><br><br>
+    <label for="Salary">Salary</label>
+    <input type="text" name="Salary" id="Salary" placeholder="enter Salary"><br><br>
+    <label for="Experience">Experience</label>
+    <input type="text" name="Experience" id="Experience" placeholder="enter Experience"><br><br>
+    <label>Employee Type:</label>
+    <select id="EmployeeType">
+        <option value="Manager">Manager</option>
+        <option value="Developer">Developer</option>
+    </select>
+    <h3>Search Employee</h3>
+
+    <input type="text" id="SearchEmployee" placeholder="Enter ID, Name or Department">
+
+    <button id="SearchButton">Search</button>
+
+    <div id="searchResult"></div>
+
+    <h3>Remove Employee</h3>
+
+    <input type="text" id="RemoveEmployeeId" placeholder="Enter Employee ID">
+
+    <button id="RemoveButton">Remove</button>
+    <br><br>
+    <button id="Submit">Submit</button>
+    <div id="employeeList"></div>
+    <p id="employeeCount"></p>
+
+    <script src="Employee.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+{
+  "EmployeeInfo": [],
+  "LeaveRequest1": [
+    {
+      "id": "1",
+      "empId": 111,
+      "empname": "Gayatri",
+      "department": "IT",
+      "LeaveType": "Casual",
+      "NumberOfDays": 2,
+      "Status": "Pending"
+    },
+    {
+      "id": "2",
+      "empId": 112,
+      "empname": "Vishakha",
+      "department": "CS",
+      "LeaveType": "Sick",
+      "NumberOfDays": 4,
+      "Status": "Pending"
+    },
+    {
+      "id": "3",
+      "empId": 113,
+      "empname": "Lina",
+      "department": "HR",
+      "LeaveType": "Paid",
+      "NumberOfDays": 6,
+      "Status": "Pending"
+    },
+    {
+      "id": "4",
+      "empId": 114,
+      "empname": "Mohit",
+      "department": "Manger",
+      "LeaveType": "Casual",
+      "NumberOfDays": 8,
+      "Status": "Pending"
+    },
+    {
+      "id": "5",
+      "empId": 115,
+      "empname": "Mayur",
+      "department": "CS",
+      "LeaveType": "Sick",
+      "NumberOfDays": 1,
+      "Status": "Pending"
+    },
+    {
+      "id": "6",
+      "empId": 116,
+      "empname": "Gaurav",
+      "department": "Manger",
+      "LeaveType": "Paid",
+      "NumberOfDays": 3,
+      "Status": "Pending"
+    },
+    {
+      "id": "enCNvykZPGM",
+      "empId": 117,
+      "empname": "Trisha",
+      "department": "IT",
+      "LeaveType": "Paid",
+      "NumberOfDays": 2,
+      "Status": "Pending"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

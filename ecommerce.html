@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oderItems</title>
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+<body>
+    <h1>E-Commerce Order Management System</h1>
+    <div class="Dashboard-box">
+    <h1>Order DashBoard</h1>
+    </div>
+    <div class="Dashboard-container">
+        <div class="totalOrder">
+        <h3>Total Order</h3>
+        <p id="totalOrder">0</p>
+    
+    </div>
+        <div class="Customer">
+        <h3>Customer Request</h3>
+        <p id="Customer">0</p>
+    </div>
+        <div class="Pending">
+        <h3>Pending</h3>
+        <p id="Pending">0</p>
+    </div>
+        <div class="Delivered">
+        <h3>Delivered</h3>
+        <p id="Delivered">0</p>
+    </div>
+        <div class="Cancelled">
+        <h3>Cancelled</h3>
+        <p id="Cancelled">0</p>
+    </div>
+    <div class="dashboard-card">
+    <h3>Total Sales</h3>
+    <p id="totalSales">0</p>
+</div>
+    </div>
+<div id="E-Commerce" class="items"></div>
+    <h2>Add E-Commerce Order</h2>
+    <form id="orderForm">
+<label for="OrderID">OrderID</label>
+<input type="text" name="OrderID" id="OrderID"placeholder=""><br><br>
+<label for="CustomerName">CustomerName</label>
+<input type="text" name="CustomerName" id="CustomerName"placeholder=""><br><br>
+<label for="Product">Product</label>
+<select id="Product">
+    <option value="Laptop">Laptop</option>
+    <option value="Tab">Tab</option>
+    <option value="Mobile">Mobile</option>
+    <option value="AC">Ac</option>
+    <option value="SmartWatch">SmartWatch</option>
+</select><br><br>
+<label for="Quantity">Quantity</label>
+<input type="text" name="Quantity" id="Quantity" placeholder=""><br><br>
+<label for="PaymentType">PaymentType</label>
+<select id="PaymentType">
+    <option value="PaymentType">PaymentType</option>
+    <option value="OnlinePayment">OnlinePayment</option>
+    <option value="OfflinePayment">OfflinePayment</option>
+</select><br><br>
+<label for="Status">Status</label>
+<select id="Status">
+    <option value="SelectStatus">SelectStatus</option>
+    <option value="Pending">Pending</option>
+    <option value="Delivered">Delivered</option>
+    <option value="Cancelled">Cancelled</option>
+</select><br><br>
+<button type="button" id="AddOrder">AddOrder</button>
+</form>
+</div>
+<h2>Serach Order</h2>
+<div class="Serach-container">
+    <label for="searchOrderID">searchOrderID</label>
+    <input type="text" name="searchOrderID"id="searchOrderID"placeholder="">
+    <br><br>
+    <button type="button" id="searchButton">search</button>
+    <p id="searchResult"></p>
+</div>
+<section id="OrderReport">
+    <h3>Filter Orders</h3>
+<input type="text" id="filterOrderInput" placeholder="Search by customer, product or status">
+<button type="button" id="filterOrderButton">Filter</button>
+    <h2>Order Report</h2>
+<p>Total Orders: <span id="reportTotal">0</span></p>
+<p>Total Sales: <span id="reportSales">0</span></p>
+<p>Average Order Amount: <span id="reportAverage">0</span></p>
+<p>Highest Value Order: <span id="reportHighestOrder">No orders yet</span></p>
+</section>
+<div id="UpdatePopup" class="popup" style="display:none";>
+    <div class="popup-content">
+        <span id="closeUpdatePopup">&times;</span>
+        <h2>Udate Order</h2>
+        <input type="hidden"id="updateOrderID">
+        <label for="updateProduct">Product</label>
+        <select id="updateProduct">
+    <option value="Laptop">Laptop</option>
+    <option value="Tab">Tab</option>
+    <option value="Mobile">Mobile</option>
+    <option value="Ac">Ac</option>
+    <option value="SmartWatch">SmartWatch</option>
+</select><br><br>
+<label for="updatePaymentType">PaymentType</label>
+<select id="updatePaymentType">
+    <option value="PaymentType">PaymentType</option>
+    <option value="OnlinePayment">OnlinePayment</option>
+    <option value="OfflinePayment">OfflinePayment</option>
+</select><br><br>
+<label for="updateStatus">Status</label>
+<select id="updateStatus">
+    <option value="SelectStatus">SelectStatus</option>
+    <option value="Pending">Pending</option>
+    <option value="Delivered">Delivered</option>
+    <option value="Cancelled">Cancelled</option>
+</select><br><br>
+        <button id="saveUpdate">save update</button>
+    </div>
+</div>
+<div id="deletePopup" class="popup" style="display:none;">
+    <div class="popup-content">
+    <h2>Delete order</h2>
+    <p>Are you sure you want to delete this Order?</p>
+    <button id="confirmDelete" class="yes-btn">Yes</button>
+    <button id="cancelDelete" class="no-btn">No</button>
+</div>
+</div>
+<div id="E-CommerceOrder" class="items">
+    <h1>Add E-Commerce Order</h1>
+</div>
+<section class="OrderList">
+    <table border="1">
+        <thead>
+            <tr class="list">
+                <th>Order ID</th>
+                <th>Customer Name</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>PaymentType</th>
+                <th>Amount</th>
+                <th>Status</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="orderBody">
+   </tbody>
+    </table>
+</section>
+<script src="ecommerce.js"></script>
+</body>
+</html>
